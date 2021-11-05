@@ -1,0 +1,229 @@
+.top-div {
+  display: flex;
+  justify-content: space-between;
+  color: whitesmoke;
+  padding: 1rem 0.8rem;
+  // overflow-x: hidden;
+
+  @media screen and (max-width: 450px) {
+    padding-top: 1vw;
+  }
+
+  .logo-div {
+    padding-top: 1vw;
+
+    img {
+      width: 120px;
+      height: 120px;
+      border-radius: 1rem;
+
+      @media screen and (min-width: 2500px) {
+      }
+
+      @media screen and (max-width: 1050px) {
+        width: 100px;
+        height: 100px;
+      }
+      @media screen and (max-width: 770px) {
+        width: 100px;
+        height: 100px;
+      }
+      @media screen and (max-width: 450px) {
+        width: 70px;
+        height: 70px;
+      }
+    }
+  }
+
+  .connect-div {
+    margin-top: 1vw;
+    background: blue;
+    border-radius: 1rem;
+    max-height: 3rem;
+    padding: 0.7rem 1rem;
+    font-size: 1.2rem;
+    cursor: pointer;
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+    -khtml-user-select: none; /* Konqueror HTML */
+    -moz-user-select: none; /* Old versions of Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome, Edge, Opera and Firefox */
+
+    @media screen and (min-width: 2500px) {
+    }
+
+    @media screen and (max-width: 1050px) {
+      margin-top: 1rem;
+      font-size: 1rem;
+    }
+    @media screen and (max-width: 770px) {
+      font-size: 1rem;
+
+      max-height: 2.7rem;
+    }
+    @media screen and (max-width: 450px) {
+      font-size: 0.8rem;
+      max-height: 2.5rem;
+    }
+
+    p {
+      font-size: 1.2rem;
+      color: white;
+      font-weight: bold;
+
+      @media screen and (max-width: 1050px) {
+        font-size: 1rem;
+      }
+      @media screen and (max-width: 770px) {
+        font-size: 0.8rem;
+      }
+      @media screen and (max-width: 450px) {
+        font-size: 2.3vw;
+      }
+    }
+  }
+  .connect-div:hover {
+    opacity: 0.8;
+  }
+  .connect-div:active {
+    opacity: 0.6;
+  }
+}
+
+.bottom-div {
+  color: white;
+  margin-top: 2rem;
+  padding: 0 2rem;
+
+  @media screen and (max-width: 450px) {
+    padding: 0;
+  }
+
+  .text-div {
+    text-align: left;
+    margin-top: 4rem;
+
+    @media screen and (max-width: 770px) {
+      margin-top: 2rem;
+    }
+
+    .header-text {
+      font-size: 3.5rem;
+      font-weight: 700;
+      z-index: 999;
+      text-align: left;
+      line-height: 4rem;
+
+      @media screen and (max-width: 1050px) {
+        font-size: 3rem;
+      }
+      @media screen and (max-width: 770px) {
+        text-align: center;
+      }
+      @media screen and (max-width: 450px) {
+        font-size: 2rem;
+        line-height: 3rem;
+      }
+      @media screen and (max-width: 380px) {
+      }
+      @media screen and (max-width: 330px) {
+      }
+
+      .animation-text {
+        margin-left: 15px;
+        color: rgb(18, 145, 219);
+      }
+    }
+
+    .slogan-text {
+      font-size: 1rem;
+      color: darkgray;
+      z-index: 999;
+
+      @media screen and (max-width: 770px) {
+        text-align: center;
+      }
+
+      @media screen and (max-width: 450px) {
+        font-size: 0.8rem;
+      }
+    }
+
+    .social-icons {
+      margin-top: 1rem;
+      width: 10rem;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      left: 2rem;
+
+      @media screen and (max-width: 770px) {
+        justify-content: center;
+        width: 100%;
+      }
+
+      .each-icon:hover {
+        opacity: 0.8;
+      }
+      .each-icon:active {
+        opacity: 0.6;
+      }
+    }
+  }
+
+  .hero-box {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    @media screen and (max-width: 1050px) {
+      top: -8rem;
+      right: 0rem;
+    }
+    @media screen and (max-width: 770px) {
+      top: -5.5rem;
+      right: 0rem;
+    }
+    @media screen and (max-width: 450px) {
+      top: -2rem;
+      right: -2rem;
+    }
+
+    .each-icon:hover {
+      opacity: 0.8;
+    }
+    .each-icon:active {
+      opacity: 0.6;
+    }
+
+    img {
+      height: 550px;
+      width: 500px;
+      @media screen and (max-width: 1050px) {
+        height: 450px;
+        width: 400px;
+      }
+      @media screen and (max-width: 770px) {
+        height: 450px;
+        width: 450px;
+      }
+      @media screen and (max-width: 450px) {
+        height: 250px;
+        width: 250px;
+      }
+      @media screen and (max-width: 380px) {
+        height: 230px;
+      }
+      @media screen and (max-width: 330px) {
+        height: 200px;
+      }
+    }
+  }
+}
+
+.container-mod {
+  width: 1500px;
+  height: 600px;
+}

@@ -1,0 +1,31 @@
+.footer {
+  color: white;
+  font-size: 1.2rem;
+  min-width: 100%;
+  text-align: center;
+  margin: 4rem auto 3rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */
+  -khtml-user-select: none; /* Konqueror HTML */
+  -moz-user-select: none; /* Old versions of Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome, Edge, Opera and Firefox */
+
+  @media screen and (max-width: 450px) {
+    font-size: 0.9rem;
+    margin: 6rem auto 2rem;
+  }
+
+  .footer-link:hover {
+    opacity: 0.8;
+    color: rgba(16, 87, 145, 0.829);
+  }
+  .footer-link:active {
+    opacity: 0.6;
+  }
+}

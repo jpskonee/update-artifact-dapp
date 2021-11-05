@@ -1,0 +1,74 @@
+.roadmap-item-root-r {
+  display: flex;
+  justify-content: center;
+  align-items: top;
+  margin-bottom: 4rem;
+
+   @media screen and (max-width: 450px) {
+     margin-bottom: 2rem;
+    }
+
+
+
+  .card {
+    width: 23rem;
+    background: #d1e5f80c;
+    box-shadow: 0 2px 10px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(2.5px);
+    -webkit-backdrop-filter: blur(2.5px);
+    border: 1px solid $blue;
+    transition: all ease 1.5s;
+
+    @media screen and (max-width: 1050px) {
+      width: 20rem;
+    }
+    @media screen and (max-width: 770px) {
+      width: 18rem;
+    }
+
+    .date {
+      padding: 0.2rem 0.5rem;
+      color: black;
+      background: $blue;
+      margin: 0;
+      text-align: center;
+      font-size: 1rem;
+      font-style: italic;
+    }
+
+    .header {
+      padding: 0.5rem 0.5rem;
+      font-size: 1rem;
+      font-weight: 800;
+      text-align: center;
+      color: $blue;
+      border-bottom: 1px groove $blue;
+      margin: 0;
+    }
+
+    .body {
+      text-transform: capitalize;
+      font-size: 0.8rem;
+      color: rgb(42, 110, 141);
+      font-weight: thin;
+      text-align: center;
+      padding: 0.2rem 0.5rem 0.5rem;
+    }
+  }
+
+  .card:hover {
+    background: rgb(255, 255, 255);
+  }
+  .line {
+    width: 4rem;
+    height: 2px;
+    background-color: $blue;
+    padding: 0;
+    margin: 0;
+
+    
+   @media screen and (max-width: 450px) {
+    width: 2rem;
+    }
+  }
+}

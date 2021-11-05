@@ -1,0 +1,53 @@
+.roadmap-root {
+  display: flex;
+  align-items: top;
+  justify-content: center;
+  margin-top: 4rem;
+
+  @media screen and (max-width: 450px) {
+    display: none;
+  }
+
+  .roadmap-left {
+    margin-top: 2rem;
+  }
+  .roadmap-right {
+    margin-top: 8rem;
+
+
+    @media screen and (max-width: 450px) {
+    margin-top: 2rem;
+    }
+  }
+  .line-sep {
+    padding: 0;
+    margin: 0;
+    position: relative;
+    .line {
+      background: $blue;
+      width: 2px;
+      height: 100%;
+      padding: 0;
+      margin: 0;
+    }
+
+    .ball-start,
+    .ball-stop {
+      width: 15px;
+      height: 15px;
+      border-radius: 100%;
+      position: absolute;
+    }
+
+    .ball-start {
+      background-color: rgb(10, 238, 29);
+      top: -6px;
+      right: -6px;
+    }
+    .ball-stop {
+      background-color: rgb(189, 10, 79);
+      bottom: -6px;
+      left: -6px;
+    }
+  }
+}

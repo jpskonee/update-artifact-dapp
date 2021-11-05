@@ -1,0 +1,35 @@
+.colour-tag {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 1rem;
+  padding: 1rem 1rem;
+  color: white;
+  font-weight: 600;
+  font-size: 1.2rem;
+  cursor: pointer;
+  display: inline-flex;
+  margin-top: 0.5rem;
+  margin-right: 0.5rem;
+
+  @media screen and (max-width: 770px) {
+    padding: 0.8rem 0.6rem;
+    flex-wrap: wrap;
+    display: inline-flex;
+    font-size: 1rem;
+  }
+  @media screen and (max-width: 450px) {
+    min-width: 43%;
+    padding: 0.8rem 0.6rem;
+    font-size: 0.9rem;
+  }
+  @media screen and (max-width: 380px) {
+    min-width: 42%;
+    padding: 0.8rem 0.6rem;
+  }
+
+  @media screen and (max-width: 330px) {
+    min-width: 41%;
+    padding: 0.7rem 0.5rem;
+  }
+}

@@ -1,0 +1,117 @@
+.selection-div {
+  border: 1px rgb(228, 216, 216) groove;
+  margin: 0rem 0 0rem 0.5rem;
+  color: white;
+
+  .selection-btn {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1rem auto;
+    padding-left: 0.5rem;
+
+    @media screen and (max-width: 1050px) {
+      margin: 0;
+    }
+
+    span {
+      font-weight: bold;
+      margin-right: 0.5rem;
+      color: wheat;
+    }
+  }
+
+  .selection-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    border: 1px rgb(228, 216, 216) groove;
+    border-left: none;
+    border-right: none;
+    padding: 1rem;
+    @media screen and (max-width: 1050px) {
+      font-size: 1.4rem;
+    }
+  }
+
+  .selection-desc,
+  .selection-prop {
+    font-size: 1rem;
+    color: lightgray;
+    text-align: left;
+    padding: 0.5rem;
+    border: 1px rgb(228, 216, 216) groove;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+
+    @media screen and (max-width: 1050px) {
+      font-size: 0.9rem;
+    }
+    span {
+      font-weight: bold;
+      margin-right: 1rem;
+      color: #1291db;
+    }
+  }
+
+  .selection-prop {
+    font-size: 1rem;
+    color: lightgray;
+    text-align: left;
+    padding: 0.4rem;
+
+    @media screen and (max-width: 1050px) {
+      font-size: 0.9rem;
+    }
+  }
+
+  .selection-amount-price {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.5rem;
+    padding: 0.8rem;
+    border: 1px rgb(228, 216, 216) groove;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+
+    @media screen and (max-width: 1050px) {
+      font-size: 1.5rem;
+    }
+
+    .selection-amount,
+    .selection-price {
+      font-style: italic;
+
+      span {
+        font-size: 1rem;
+        font-weight: bold;
+        margin-right: 1rem;
+        color: #1291db;
+        font-style: normal;
+      }
+
+      img {
+        width: 1rem;
+        height: 1rem;
+        margin-right: 0.5rem;
+      }
+    }
+
+    .selection-price {
+      margin-right: 1rem;
+    }
+  }
+
+  .selection-footnote {
+    font-style: italic;
+    color: rgb(179, 154, 15);
+    opacity: 0.5;
+    padding: 0.5rem;
+  }
+  .selection-footnote:hover {
+    color: rgb(226, 194, 11);
+    opacity: 1;
+  }
+}
