@@ -23,6 +23,7 @@ function Dapp() {
   const [claimingNft, setClaimingNft] = useState(false);
   const [_amount, setAmount] = useState(1);
 
+  console.log(Date.now());
   //frontend state
   const xSize = {
     name: "X type",
@@ -47,11 +48,11 @@ function Dapp() {
     if (typeCLicked === "x") {
       setSize(xSize);
       dispatch(connectB());
-      // setContract("0x70c4A5B81E1B32B22dBDEC12F4662d593e66ADfa");  
+      // setContract("0x70c4A5B81E1B32B22dBDEC12F4662d593e66ADfa");
     } else if (typeCLicked === "r") {
       setSize(rSize);
       dispatch(connect());
-      // setContract("0x768c649118296482Cbb8620f69571830411C8ea7");  
+      // setContract("0x768c649118296482Cbb8620f69571830411C8ea7");
     }
   };
 
@@ -96,7 +97,7 @@ function Dapp() {
   }, [blockchain.smartContract, dispatch]);
 
   return (
-    <div className="shop-base">
+    <div className="shop-base" id="connect">
       {blockchain.account === "" || blockchain.smartContract === null ? (
         <Grid
           style={{
@@ -127,9 +128,7 @@ function Dapp() {
           </Grid>
           <div className="connect-btn-div">
             <div className="connect-title">Mint Artifacts</div>
-            <div className="connect-desc">
-              Connect to the Ethereum network
-            </div>
+            <div className="connect-desc">Connect to the Ethereum network</div>
             <div
               onClick={(e) => {
                 e.preventDefault();
@@ -163,13 +162,7 @@ function Dapp() {
                 <div>The sale has ended.</div>
                 <div>
                   You can still find Artifacts on{" "}
-                  <a
-                    target={"_blank"}
-                    href={
-                      "Opensea"
-                    }
-                    rel="noreferrer"
-                  >
+                  <a target={"_blank"} href={"Opensea"} rel="noreferrer">
                     Opensea.io
                   </a>
                 </div>
@@ -180,15 +173,13 @@ function Dapp() {
                 <div className="mint-detail-powered">
                   {" "}
                   Powered by:
-                  <span className="mint-detail-owner"> Artifact </span>
                   <CheckCircleIcon style={{ color: "#2081e2" }} />
                 </div>
 
                 <div className="mint-details-date">
                   <AlarmIcon style={{ fontSize: "2.5rem" }} />
                   <span className="mint-details-date-text">
-                    Sales ends in: <Countdown date={Date.now() + 10000000000} />{" "}
-                    days
+                    Sales ends in: <Countdown date={"14 November, 2021"} />
                   </span>
                 </div>
 
@@ -314,7 +305,7 @@ function Dapp() {
                                 className="mint-counter-amount"
                               >
                                 {" "}
-                                {(size.price * _amount).toFixed(2)}{" "}
+                                {(size.price * _amount).toFixed(4)}{" "}
                               </div>
                             </div>
                           </div>
@@ -341,8 +332,8 @@ function Dapp() {
           </Grid>
           <div className="mint-foot-note">
             <div>
-              *Please make sure you are connected to the right network (Ethereum) 
-              and the correct address. Please note: Once you make the
+              *Please make sure you are connected to the right network
+              (Ethereum) and the correct address. Please note: Once you make the
               purchase, you cannot undo this action. *We have set the gas limit
               to 285000 for the contract to successfully mint your NFT. We
               recommend that you don't change the gas limit.

@@ -12,7 +12,10 @@ const HeroSection = () => {
           <div className="logo-div">
             <img src="/images/logo-new.PNG" alt="logo" className="logo-img" />
           </div>
-          <div className="connect-div">Connect Wallet</div>
+          <a href="#connect">
+            {" "}
+            <div className="connect-div">Connect Wallet</div>{" "}
+          </a>
         </div>
 
         <Grid container className="bottom-div">
@@ -30,11 +33,7 @@ const HeroSection = () => {
               </div>
               <div className="social-icons">
                 <IconButton>
-                  <a
-                    href="https://testnets.opensea.io/assets/0xc073081d0c277ee6c3880326d67f43a7a91e5b31/2"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
+                  <a href="#">
                     <img
                       className="each-icon"
                       src="/images/opensea.png"

@@ -13,7 +13,6 @@ import Aos from "aos";
 import "aos/dist/aos.css";
 
 export default function Index() {
-
   useEffect(() => {
     Aos.init({ duration: 1500 });
   }, []);
@@ -88,15 +87,7 @@ export default function Index() {
                 title="Founder"
               />
             </div>
-            <div data-aos="zoom-in" className="each-team">
-              <TeamCard
-                color1="#FEB3C8"
-                color2="#B60A30"
-                img="/images/team/artifact-team-6.jpg"
-                name="@TheBigMort_eth"
-                title="Senior Advisor"
-              />
-            </div>
+
             <div data-aos="zoom-in" className="each-team img-right">
               <TeamCard
                 color1="#916D4C"
@@ -114,6 +105,15 @@ export default function Index() {
                 img="/images/team/artifact-team-3.png"
                 name="@TheLoftyMom"
                 title="Brand Awareness"
+              />
+            </div>
+            <div data-aos="zoom-in" className="each-team">
+              <TeamCard
+                color1="#538CAD"
+                color2="#272B5E"
+                img="/images/team/artifact-team-4.png"
+                name="@Agho.dev"
+                title="Developer"
               />
             </div>
             {/* <div data-aos="zoom-in" className="each-team img-right">
@@ -159,11 +159,7 @@ export default function Index() {
           >
             <div className="social-links-icon">Twitter</div>
           </a>
-          <a
-            href="https://testnets.opensea.io/assets/0xc073081d0c277ee6c3880326d67f43a7a91e5b31/2"
-            target="_blank"
-            rel="noreferrer"
-          >
+          <a href="#">
             <div className="social-links-icon">Opensea</div>
           </a>
           <a
